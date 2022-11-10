@@ -1,0 +1,32 @@
+.header-container {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+
+.above-banner {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+
+.pin-img {
+    width: 15px;
+}
+
+.location-text {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 5vw;
+    color: white;
+}
+
+.header-banner {
+    height: 90%;
+    background: url("../../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
