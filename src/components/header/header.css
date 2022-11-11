@@ -31,9 +31,32 @@
     background-size: 100% 100%;
 }
 
-.navbar-container
+.navbar {
+    width: 91%;
+    margin: auto;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 50px;
+    padding: 20px 80px;
+    background-color: #07376ba5;
+    border-radius: 50px;
+}
+
+.nav-item {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 16px;
+}
 
 
 .logo-img {
-    height: 80px;
+    height: 70px;
 }
