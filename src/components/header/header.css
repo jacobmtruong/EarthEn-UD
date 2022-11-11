@@ -1,62 +1,102 @@
+:root {
+    --blue: #07376bd8
+}
+
+
 .header-container {
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     background-color: black;
-}
-
-.above-banner {
-    position: relative;
-    height: 10%;
-    width: 100%;
-    background-color: black;
-}
-
-.pin-img {
-    width: 15px;
-}
-
-.location-text {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 30px;
-    left: 5vw;
-    color: white;
-}
-
-.header-banner {
-    height: 90%;
     background: url("../../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
 }
 
-.navbar {
-    width: 91%;
+.navbar-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
     margin: auto;
-    padding: 48px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    background-color: var(--blue);
+    padding: 20px 90px;
+    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 95% 100%, 100% 100%, 0% 100%);
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 30%;
+    left: 15%; 
 }
 
 .navbar-list {
     display: flex;
-    gap: 50px;
-    padding: 20px 80px;
-    background-color: #07376ba5;
-    border-radius: 50px;
+    align-items: center;
+    gap: 15px;
 }
 
 .nav-item {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 500;
     text-decoration: none;
     color: white;
-    padding: 10px 30px;
-    border-radius: 16px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.44);
+    color: black;
+}
 
 .logo-img {
     height: 70px;
 }
+
+.buttons-banner {
+    margin-top: 60px;
+}
+
+.buttons-group {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.learnmore-button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background: #07376bd8;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.learnmore-button:hover {
+    background: rgba(255, 255, 255, 0.44);
+    color: black;
+}
+
+.donate-button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.donate-button:hover {
+    background: var(--blue);
+    color: white;
+}
+
