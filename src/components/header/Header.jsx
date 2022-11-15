@@ -10,11 +10,21 @@ const Header = () => {
                     <Link><img className='logo-img' src={logo} alt="logo" /></Link>
                 </div>
                 <div className='navbar-list'>
-                    <Link className='nav-item'>Home</Link>
-                    <Link className='nav-item'>About</Link>
-                    <Link className='nav-item'>Solutions</Link>
-                    <Link className='nav-item'>Media</Link>
-                    <Link className='nav-item'>Contact</Link>
+                    <Link className='nav-item'>
+                        <p className='navbar-leaf'>Home</p>
+                    </Link>
+                    <Link className='nav-item'>
+                        <p className='navbar-leaf'>About</p>
+                    </Link>
+                    <Link className='nav-item'>
+                        <p className='navbar-leaf'>Solutions</p>
+                    </Link>
+                    <Link className='nav-item'>
+                        <p className='navbar-leaf'>Media</p>
+                    </Link>
+                    <Link className='nav-item'>
+                        <p className='navbar-leaf'>Contact</p>
+                    </Link>
                 </div>
             </div>
 
@@ -27,8 +37,6 @@ const Header = () => {
                     <button className='learnmore-button'>Learn More</button>
                     <button className='donate-button'>Donate</button>
                 </div>
-
-
             </div>
         </div>
     )

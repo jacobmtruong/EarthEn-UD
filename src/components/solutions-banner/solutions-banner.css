@@ -1,0 +1,9 @@
+:root {
+    --blue: #07376b
+}
+
+.solutionsbanner-container {
+    height: 20vh;
+    width: 100vw;
+    background-color: var(--blue);
+}

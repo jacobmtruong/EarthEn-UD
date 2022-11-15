@@ -1,5 +1,5 @@
 :root {
-    --blue: #07376bd8
+    --blue: #07376bd8 --green:
 }
 
 
@@ -17,20 +17,21 @@
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 70%;
+    transform: translate(-50%, -50%);
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue);
-    padding: 20px 90px;
-    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 95% 100%, 100% 100%, 0% 100%);
+    background-color: transparent;
+    padding: 20px 40px;
+    border-radius: 12px;
+    /* clip-path: polygon(3% 0%, 100% 0, 97% 100%, 95% 100%, 100% 100%, 0% 100%); */
 }
 
 .banner-text {
     position: absolute;
     bottom: 30%;
-    left: 15%; 
+    left: 19%;
 }
 
 .navbar-list {
@@ -39,19 +40,29 @@
     gap: 15px;
 }
 
+
 .nav-item {
-    font-size: 24px;
-    font-weight: 500;
     text-decoration: none;
-    color: white;
-    padding: 10px 40px;
-    border-radius: 20px;
+    padding: 10px 30px;
     transition: 0.3s;
 }
 
-.nav-item:hover {
-    background: rgba(255, 255, 255, 0.44);
-    color: black;
+.navbar-leaf {
+    width: 50px;
+    height: 50px;
+    border-radius: 70px 0;
+    transform: rotate(0deg);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar-leaf:hover {
+    background-color: #9aeba6c4;
 }
 
 .logo-img {
@@ -80,7 +91,7 @@
 }
 
 .learnmore-button:hover {
-    background: rgba(255, 255, 255, 0.44);
+    background: #9aeba6;
     color: black;
 }
 
@@ -88,7 +99,7 @@
     font-size: 20px;
     font-weight: 600;
     padding: 20px 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     color: white;
     background-color: transparent;
     border: 2px solid white;
@@ -96,7 +107,6 @@
 }
 
 .donate-button:hover {
-    background: var(--blue);
-    color: white;
+    background: #9aeba6;
+    color: black;
 }
-
